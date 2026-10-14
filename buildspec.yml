@@ -1,0 +1,12 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - echo "Hello from AWS CodeBuild!"
+      - mkdir -p output
+      - cp index.html output/index.html
+
+artifacts:
+  files:
+    - output/index.html
